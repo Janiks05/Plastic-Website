@@ -1,8 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
-
+* {
+  font-family:'Roboto Slab', serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 4.5rem;
+}
 body {
   background-image: url(./img/background-layer.svg);
   background-repeat: no-repeat;
@@ -17,7 +26,8 @@ header {
   line-height: 7rem;
 }
 main {
-  background-color: rgb(0, 102, 255);
+  background-image: linear-gradient(rgb(0, 102, 255),rgb(12, 35, 70));
+  color: rgb(207, 225, 230);
 }
 .section {
   display: flex;
@@ -29,17 +39,66 @@ main {
   margin-right: auto;
 }
 .container h2 {
-  font-size: 3.2rem;
+  font-size: 2.9rem;
   line-height: 5rem;
 }
 .container p {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 .container img {
   width: 100%;
   height: auto;
 }
+footer{
+  text-align: center;
+  background-image: linear-gradient(rgb(12, 35, 70), black);
+  padding-top: 4rem;
+  padding-bottom: 15rem;
+  position: relative;
+}
+footer .img1{
+  position: absolute;
+  transform: translateX(-700px);
+  width: 20%;
+  height: auto;
+}
+
+footer .img2{
+  position: absolute;
+  width: 20%;
+  height: auto;
+  transform: translateX(400px);
+  animation-name: anim1;
+}
+footer h3{
+  font-size: 3.5em;
+  color: aliceblue;
+  
+}
+footer p{
+  font-size: 1.4rem;
+  color: aliceblue;
+}
+footer a{
+  border: 1px solid rgb(15, 15, 119);
+  font-size: 1.4rem;
+  color: aliceblue;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 20px;
+  animation-duration: 500ms;
+  margin-top: 20px;
+}
+footer a:hover{
+  background-color: rgb(7, 31, 37);
+  text-decoration: underline;
+}
+.ftxt{
+  margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 800px) {
   .section {
     flex-direction: column;
@@ -50,5 +109,20 @@ main {
   }
   .container {
     width: 90%;
+  }
+}
+.invisible{
+  display: none;
+}
+.anim{
+  animation-name: anim;
+  animation-duration: 2s;
+}
+@keyframes anim{
+  from{
+    transform: translateX(-1300px);
+  }
+  to{
+    transform: translateX(-700px);
   }
 }
