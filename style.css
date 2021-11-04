@@ -4,13 +4,19 @@
   scroll-behavior: smooth;
 }
 * {
-  font-family:'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
-h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   font-size: 4.5rem;
+}
+html {
+  overflow-x: hidden;
 }
 body {
   background-image: url(./img/background-layer.svg);
@@ -26,7 +32,7 @@ header {
   line-height: 7rem;
 }
 main {
-  background-image: linear-gradient(rgb(0, 102, 255),rgb(12, 35, 70));
+  background-image: linear-gradient(rgb(0, 102, 255), rgb(12, 35, 70));
   color: rgb(207, 225, 230);
 }
 .section {
@@ -50,37 +56,35 @@ main {
   width: 100%;
   height: auto;
 }
-footer{
+footer {
   text-align: center;
   background-image: linear-gradient(rgb(12, 35, 70), black);
   padding-top: 4rem;
   padding-bottom: 15rem;
   position: relative;
 }
-footer .img1{
+footer .img1 {
   position: absolute;
   transform: translateX(-700px);
   width: 20%;
   height: auto;
 }
-
-footer .img2{
-  position: absolute;
-  width: 20%;
+.trash {
+  width: 22%;
   height: auto;
-  transform: translateX(400px);
-  animation-name: anim1;
+  position: absolute;
+  transform: translateX(300px);
 }
-footer h3{
+
+footer h3 {
   font-size: 3.5em;
   color: aliceblue;
-  
 }
-footer p{
+footer p {
   font-size: 1.4rem;
   color: aliceblue;
 }
-footer a{
+footer a {
   border: 1px solid rgb(15, 15, 119);
   font-size: 1.4rem;
   color: aliceblue;
@@ -91,11 +95,11 @@ footer a{
   animation-duration: 500ms;
   margin-top: 20px;
 }
-footer a:hover{
+footer a:hover {
   background-color: rgb(7, 31, 37);
   text-decoration: underline;
 }
-.ftxt{
+.ftxt {
   margin-bottom: 3rem;
 }
 
@@ -111,18 +115,25 @@ footer a:hover{
     width: 90%;
   }
 }
-.invisible{
+.invisible {
   display: none;
 }
-.anim{
+.anim {
   animation-name: anim;
   animation-duration: 2s;
 }
-@keyframes anim{
-  from{
+@keyframes anim {
+  from {
     transform: translateX(-1300px);
   }
-  to{
-    transform: translateX(-700px);
+}
+
+.animtrash {
+  animation-name: flowin;
+  animation-duration: 2s;
+}
+@keyframes flowin {
+  from {
+    transform: translateX(700%);
   }
 }
