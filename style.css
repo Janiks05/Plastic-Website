@@ -65,12 +65,12 @@ footer {
 }
 footer .img1 {
   position: absolute;
-  transform: translateX(-700px);
+  transform: translateX(-800px);
   width: 20%;
   height: auto;
 }
 .trash {
-  width: 22%;
+  width: 20%;
   height: auto;
   position: absolute;
   transform: translateX(300px);
@@ -102,17 +102,36 @@ footer a:hover {
 .ftxt {
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 800px) {
+  .trash {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .section {
     flex-direction: column;
   }
   header {
-    font-size: 1.3rem;
+    font-size: 2px;
     line-height: 5rem;
+    display: inline-block;
+  }
+  header h1 {
+    font-size: 2.9rem;
+    line-height: normal;
   }
   .container {
     width: 90%;
+  }
+  .trash {
+    display: none;
+  }
+  footer .img1 {
+    position: absolute;
+    transform: translateY(350px);
+    width: 40%;
+    height: auto;
   }
 }
 .invisible {
