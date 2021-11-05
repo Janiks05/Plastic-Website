@@ -60,12 +60,12 @@ footer {
   text-align: center;
   background-image: linear-gradient(rgb(12, 35, 70), black);
   padding-top: 4rem;
-  padding-bottom: 15rem;
+  padding-bottom: 20rem;
   position: relative;
 }
 footer .img1 {
   position: absolute;
-  transform: translateX(-800px);
+  transform: translateX(-680px);
   width: 20%;
   height: auto;
 }
@@ -102,7 +102,7 @@ footer a:hover {
 .ftxt {
   margin-bottom: 3rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .trash {
     display: none;
   }
@@ -129,9 +129,19 @@ footer a:hover {
   }
   footer .img1 {
     position: absolute;
-    transform: translateY(350px);
+    transform: translateY(190px);
     width: 40%;
     height: auto;
+  }
+}
+@media screen and (max-width: 700px){
+  footer .img1{
+    transform: translateY(300px);
+  }
+}
+@media screen and (max-width: 370px){
+  footer .img1{
+    transform: translateY(400px);
   }
 }
 .invisible {
